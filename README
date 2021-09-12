@@ -1,0 +1,25 @@
+https://www.youtube.com/watch?v=21E1epbsSig&t=622s
+
+# Use docker as an execution environment 
+# initialize the rasa environment
+docker run --user 1000 -v $(pwd):/app rasa/rasa init --no-prompt
+
+# call the rasa shell to talk to the 
+docker run --user 1000 -it -v $(pwd):/app rasa/rasa shell 
+
+# modify and train model
+https://www.youtube.com/watch?v=lOEIJ9QLB9I
+
+# 
+
+docker run --user 1000 -it -v $(pwd):/app rasa/rasa train
+
+docker run --user 1000 -it -v $(pwd):/app rasa/rasa shell
+
+
+Running a model in the container.
+
+docker run -it  -p 5005:5005 20a9a869ced8 run --model app/models/20210908-061944.tar.gz
+
+
+/Users/chrissenanayake/dev/hackathon/Repo/chatbot/Example4/models/20210908-061944.tar.gz
