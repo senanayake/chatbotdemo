@@ -26,3 +26,8 @@ docker run -it  -p 5005:5005 20a9a869ced8 run --model app/models/20210908-061944
 
 Clean up docker environment https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
 docker system prune -a
+
+
+Add actions 
+https://www.youtube.com/watch?v=rvHg7N8ux2I
+

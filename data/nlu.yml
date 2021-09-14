@@ -16,7 +16,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-    - express_funeral_hardship
 
 - intent: goodbye
   examples: |
@@ -103,6 +102,30 @@ nlu:
     - I have to pay for my fathers's funeral
     - I have to pay for my mothers's funeral    
 
+- intent: inquire_charity
+  examples: |
+    - I would like to donate some of my money to a non-profit
+    - I would like to donate some of my money to a 501.3.c
+    - Is it possible to donate some funds to a charity
+    - How to intiate a donation request
+    - how to intiate a charity donation request
+    - how to send money to a non-profit 
+    - how to send arrange a recurring charity donation
+    - please help me setup a charity donation
+
+- intent: invest_crypto
+  examples: |
+      - Should I invest in bitcoin
+      - Should i get into crypto
+      - Should I invest in crypto
+      - how should i start investing in crypto
+      - why don't you recommend crypto investments    
+
+- intent: whatis_crypto
+  examples: |
+      - what is crypto
+      - what are cryptocurrencies
+      - what is cryptocurrency
 
 - intent: bot_challenge
   examples: |
@@ -110,3 +133,42 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: hackathon_summary
+  examples: |
+    - can you summarize the presentation?
+    - how did you think the presentation went?
+    - how was the presentation?
+    - can you sum up the presentation?
+    - can you sum up?
+
+
+- intent: hackathon_bigpicture
+  examples: |
+    - how can this be used in the future?
+    - what about more complex examples?
+    - can it replace the advisor?
+    - what about the bigger picture?
+    - how could this evolve?
+
+- intent: hackathon_solutionuseful
+  examples: |
+    - does the solution address the problem?
+    - is the solution useful?
+    - does the solution give us something useful?
+
+- intent: howdid_teamdo
+  examples: |
+    - how did the team perform
+    - how well did the team work together
+    - how was the collaboration 
+    - did the team work well togther?
+
+
+- intent: give_time
+  examples: |
+    - can you tell me what time it is
+    - tell me the time
+    - what is the time
+    - what time is it
+    - do you have the time

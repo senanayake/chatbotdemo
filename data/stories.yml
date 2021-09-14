@@ -38,3 +38,39 @@ stories:
   steps:
   - intent: express_funeral_hardship
   - action: utter_funeral_hardship_response
+
+
+- story: charity
+  steps:
+  - intent: inquire_charity
+  - action: utter_charity_response
+
+- story: charity
+  steps:
+  - intent: inquire_charity
+  - action: utter_charity_response
+
+- story: summary_hackathon
+  steps:
+  - intent: hackathon_summary
+  - action: utter_hackathon_summary
+  - intent: hackathon_bigpicture
+  - action: utter_bigger_picture
+  - intent: hackathon_solutionuseful
+  - action: utter_whysolution_useful
+  - intent: howdid_teamdo
+  - action: utter_how_did_teamdo
+
+
+- story: crypto_discussion
+  steps:
+  - intent: whatis_crypto
+  - action: utter_crypto_response
+  - intent: invest_crypto
+  - action: utter_investcrypto_response
+
+- story: get the time
+  steps:
+  - intent: give_time
+  - action: action_show_time
+

@@ -10,6 +10,17 @@ intents:
   - bot_challenge
   - meeting_goals
   - express_funeral_hardship
+  - inquire_charity
+  - give_time
+  - invest_crypto
+  - whatis_crypto
+  - hackathon_summary
+  - hackathon_bigpicture
+  - hackathon_solutionuseful
+  - howdid_teamdo
+
+actions:
+  - action_show_time
 
 responses:
   utter_greet:
@@ -36,6 +47,27 @@ responses:
 
   utter_funeral_hardship_response:
   - text: "I am sorry to hear about your loss. Click here to learn about how a hardship withdrawal can be used:  https://youtu.be/rWMTW-nmHfo?list=PL4q4IaUJilylwnYYXU8cCuSeK7zkbG0a8&t=128" 
+
+  utter_charity_response:
+  - text: "Learn about how you can use your retirement assets to support causes that are important to you. Watch this short video https://www.youtube.com/watch?v=6q4c3eL_Q64&list=PL4q4IaUJilylwnYYXU8cCuSeK7zkbG0a8&index=4 "
+
+  utter_crypto_response:
+    - text: "Cryptocurrencies are digital assets (not physical assets like cash) used within blockchain networks to send value, pay for transactions or provide network incentives. Prices generally are driven by supply and demand and cost of production (e.g., the computing power required to mine one bitcoin)."
+
+  utter_investcrypto_response:
+    - text: "In our view, these are speculative, high-risk investments that require more regulated, quality products before we consider it a robust and investable asset class. Still, we believe long-term investors may benefit from an overview of what they are, the material risks and what’s ahead."
+
+  utter_hackathon_summary:
+    - text: "We showed a working website running in docker that showcases a custom trained model showcasing RASA nlu and the Dual Intent Entity Transformer algorithm.\n Furthermore, we think customers will love this mechanism and engage with their virtual advisor."
+
+  utter_bigger_picture:
+    - text: "A system like this needs to be trained with lots of real world data. Targeting RASA to a specific problem and then bringing in contexual awareness would be the next steps. As RASA evolves further, it could become a real assistant and eventually a fully automated advisor. The journey to get there will be an evolution."
+  
+  utter_whysolution_useful:
+    - text: "We have shown the basis of a conversational system to drive customer engagement. This will offload face time work from Advisors and allow practices to scale to new levels. - We have laid out how the system can evolve and be deployed to production systems. A RASA based solution allows us to keep our training data out of the hands of third party services - in the world of zero trust, this is a serious consideration."
+
+  utter_how_did_teamdo:
+    - text: "These individual entrants came together as team to execute on the AAA vision. 1) Agility: The team learned many new skills and drank lots of coffee. None of this was regular work for us. 2) Automation: The entire demo provisioning was automated using docker-compose. 3) Analytics: Identifying world class algorithms for Natural Language understanding is essential. We did this with our exploration of RASA open source."
 
 session_config:
   session_expiration_time: 60
