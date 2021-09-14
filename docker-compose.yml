@@ -1,14 +1,5 @@
 version: '3.0'
-services:
-  rasaactions:
-    build: .
-    container_name: "actionserver"    
-    ports:
-      - 5055:5055
-    volumes:
-      - ./:/app/actions      
-    networks:
-      - rasa_network    
+services: 
   rasa:
     build:     
       dockerfile: Dockerfile
@@ -18,11 +9,8 @@ services:
     volumes:
       - ./:/app
     networks:  
-      - rasa_network
       - db_network
-      - web_network  
-    depends_on: 
-      - rasaactions        
+      - web_network        
   appseed-app:
     restart: always
     env_file: .env
@@ -51,6 +39,4 @@ networks:
         db_network:
           driver: bridge
         web_network:
-          driver: bridge 
-        rasa_network:
           driver: bridge   
